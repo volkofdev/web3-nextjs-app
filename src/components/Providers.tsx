@@ -1,4 +1,4 @@
-'use client'; // Указываем, что это клиентский компонент
+'use client';
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { WagmiProvider } from 'wagmi';

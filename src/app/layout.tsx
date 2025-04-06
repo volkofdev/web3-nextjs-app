@@ -1,6 +1,6 @@
 import './globals.css';
 import { Providers } from '@/components/Providers';
-import '@rainbow-me/rainbowkit/styles.css'; // Стили RainbowKit
+import '@rainbow-me/rainbowkit/styles.css';
 
 export const metadata = {
   title: 'My Web3 App',
@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-gray-900 text-white">
+      <body className="bg-background text-foreground">
         <Providers>{children}</Providers>
       </body>
     </html>

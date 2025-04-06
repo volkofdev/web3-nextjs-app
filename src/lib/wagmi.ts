@@ -4,11 +4,11 @@ import { mainnet, sepolia } from 'wagmi/chains';
 
 export const config = getDefaultConfig({
   appName: 'My Web3 App',
-  projectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID as string,
+  projectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID,
   chains: [mainnet, sepolia],
   ssr: true,
   transports: {
     [mainnet.id]: http(),
-    [sepolia.id]: http(),
+    [sepolia.id]: http(process.env.NEXT_PUBLIC_SEPOLIA_RPC),
   },
 });
