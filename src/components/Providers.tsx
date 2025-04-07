@@ -8,6 +8,7 @@ import { config } from '@/lib/wagmi';
 const queryClient = new QueryClient();
 
 export function Providers({ children }: { children: React.ReactNode }) {
+  console.log(WagmiProvider);
   return (
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
